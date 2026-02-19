@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Main background - light gray */
+    --background: 210 20% 96%;
+    --foreground: 200 30% 15%;
+
+    /* Cards - white */
+    --card: 0 0% 100%;
+    --card-foreground: 200 30% 15%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 30% 15%;
+
+    /* Primary - Teal accent */
+    --primary: 174 62% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Light teal */
+    --secondary: 174 40% 92%;
+    --secondary-foreground: 174 62% 30%;
+
+    /* Muted */
+    --muted: 210 15% 92%;
+    --muted-foreground: 200 15% 45%;
+
+    /* Accent */
+    --accent: 174 50% 88%;
+    --accent-foreground: 174 62% 25%;
+
+    /* Destructive - for alerts */
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Warning - for low stock */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Success */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 174 62% 40%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar - Dark teal */
+    --sidebar-background: 185 45% 12%;
+    --sidebar-foreground: 180 15% 85%;
+    --sidebar-primary: 174 62% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 185 40% 18%;
+    --sidebar-accent-foreground: 180 15% 95%;
+    --sidebar-border: 185 35% 20%;
+    --sidebar-ring: 174 62% 50%;
+    --sidebar-muted: 185 30% 25%;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174, 62%, 40%) 0%, hsl(185, 70%, 35%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 98%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(185, 45%, 15%) 0%, hsl(174, 62%, 30%) 100%);
+  }
+
+  .dark {
+    --background: 185 45% 8%;
+    --foreground: 180 15% 95%;
+
+    --card: 185 40% 12%;
+    --card-foreground: 180 15% 95%;
+
+    --popover: 185 40% 12%;
+    --popover-foreground: 180 15% 95%;
+
+    --primary: 174 62% 50%;
+    --primary-foreground: 185 45% 8%;
+
+    --secondary: 185 40% 18%;
+    --secondary-foreground: 180 15% 95%;
+
+    --muted: 185 30% 18%;
+    --muted-foreground: 180 15% 60%;
+
+    --accent: 185 40% 22%;
+    --accent-foreground: 180 15% 95%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 185 35% 20%;
+    --input: 185 35% 20%;
+    --ring: 174 62% 50%;
+
+    --sidebar-background: 185 50% 6%;
+    --sidebar-foreground: 180 15% 85%;
+    --sidebar-primary: 174 62% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 185 45% 12%;
+    --sidebar-accent-foreground: 180 15% 95%;
+    --sidebar-border: 185 40% 15%;
+    --sidebar-ring: 174 62% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-sm;
+  }
+
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-2.5 rounded-lg text-sidebar-foreground/80 hover:bg-sidebar-accent hover:text-sidebar-foreground transition-all duration-200;
+  }
+
+  .sidebar-item-active {
+    @apply bg-sidebar-accent text-sidebar-primary font-medium;
+  }
+
+  .stat-card {
+    @apply bg-card rounded-xl p-5 shadow-sm border border-border/50 hover:shadow-md transition-shadow duration-200;
+  }
+
+  .input-field {
+    @apply bg-background border border-input rounded-lg px-4 py-2.5 text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-ring focus:border-transparent outline-none transition-all;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
