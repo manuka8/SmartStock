@@ -72,51 +72,51 @@
 
 ### 1️⃣ Home
 
-![Home](screenshots/home.jpg)
+![Home](screenshots/Home.png)
 
 ### 2️⃣ Admin Login
 
-![Admin Login](screenshots/admin_login.jpg)
+![Admin Login](screenshots/admin_login.png)
 
 ### 3️⃣ Admin Dashboard
 
-![Admin Dashboard](screenshots/admin_dasboard.jpg)
+![Admin Dashboard](screenshots/admin_dashboard.png)
 
 ### 4️⃣ User Login
 
-![User Login](screenshots/user_login.jpg)
+![User Login](screenshots/user_login.png)
 
 ### 5️⃣ Agency Management
 
-![Agency Management](screenshots/agency_management.jpg)
+![Agency Management](screenshots/agency_management.png)
 
 ### 6️⃣ Inventory Management
 
-![Inventory Management](screenshots/inventory_management.jpg)
+![Inventory Management](screenshots/inventory_management.png)
 
 ### 7️⃣ Goods Receiving (GRN)
 
-![Goods Receiving](screenshots/good_receive.jpg)
+![Goods Receiving](screenshots/good_receive.png)
 
 ### 8️⃣ Low Stock Alert
 
-![Low Stock](screenshots/low_stock.jpg)
+![Low Stock](screenshots/low_stock.png)
 
 ### 9️⃣ Product Management
 
-![Product Management](screenshots/product.jpg)
+![Product Management](screenshots/product.png)
 
 ### 🔟 Sales Management
 
-![Sales Management](screenshots/sales.jpg)
+![Sales Management](screenshots/sales.png)
 
 ### 1️⃣1️⃣ Vehicle Management
 
-![Vehicle Management](screenshots/vehicle.jpg)
+![Vehicle Management](screenshots/vehicle.png)
 
 ### 1️⃣2️⃣ Management Overview
 
-![Management](screenshots/management.jpg)
+![Management](screenshots/management.png)
 
 ---
 
