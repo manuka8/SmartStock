@@ -1,4 +1,4 @@
-export const API_BASE_URL = import.meta.env?.VITE_API_URL || 'http://localhost:8091';
+export const API_BASE_URL = import.meta.env?.VITE_API_URL ||  'http://smartstock.gamer.gd' || 'http://163.245.221.172';
 // export const API_BASE_URL = import.meta.env?.VITE_API_URL || 'https://smartstore.lk';
 
 export async function apiFetch(path: string, options: RequestInit = {}) {
