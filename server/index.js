@@ -26,7 +26,7 @@ const PORT = process.env.PORT || 8091
 
 // CORS middleware - Allow all origins for development and production
 app.use(cors({
-  origin: ['http://localhost:8080', 'http://localhost:3000', 'http://localhost','https://smartstock.gamer.gd','	http://163.245.221.172'], // Allow specific origins
+  origin: ['http://localhost:8080', 'http://localhost:3000', 'http://localhost','https://smartstock.gamer.gd','http://163.245.221.172'], // Allow specific origins
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
   credentials: true,
